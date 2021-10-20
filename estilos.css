@@ -9,7 +9,7 @@
 }
 
 body{
-    background-color: white;
+    background-color: rgb(241, 238, 238);
     /* font-size: 1.5rem; */
     font-family: 'Open Sans', sans-serif;
 }
@@ -20,18 +20,21 @@ body{
 
 header{
     width: 100%;
-    background-color: #343434;
+    /* background-color: #343434; */
+    background-color: rgb(241, 238, 238);
 }
 
 .nav-container{
-    background-color: #343434;
+    /* background-color: #343434; */
+    background-color: rgb(241, 238, 238);
     display: flex;
     width: 80%;
     max-width: 1000px;
     margin: auto;
     justify-content: space-between;
     padding: 5px 40px;
-    color: white;
+    /* color: white; */
+    color: #343434;
 }
 
 .social-container{
@@ -54,14 +57,34 @@ ul li{
 }
 
 .img-container{
+    width: 100%;
+    max-width: 1000px;
+    height: 525px;
     display: flex;
     justify-content: center;
-    background-color: white;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    /* background-color: white; */
+    margin: auto;
+    background-image: url(img/main.jpg);
 }
 
 .main-img{
-    width: 90%;
+    width: 100%;
     max-width: 1000px;
+}
+
+.nombre{
+    font-weight: 700;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+.sub-nombre{
+    color: #e9e9e9;
 }
 
 /* --------------------
