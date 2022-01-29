@@ -13,18 +13,23 @@ body{
     font-family: 'Inter', sans-serif;
 }
 
-nav{
-    color: #e5e5e5;
+.nav{
     height: 100px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
 
-nav>p{
+.nav__link{
+    color: #e5e5e5;
     padding-right: 100px;
     font-size: 18px;
     font-weight: 600;
+    text-decoration: none;
+}
+
+.nav__link--color{
+    color: #f1a600;
 }
 
 /* --------------------
