@@ -2,6 +2,12 @@
 -------GENERAL---------
 -------------------- */
 
+:root{
+    --main-color: #242635;
+    --first-color: #f1a600;
+    --second-color: #1f1d2c;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -9,30 +15,144 @@
 }
 
 body{
-    background-color: #242635;
+    background-color: var(--second-color);
     font-family: 'Inter', sans-serif;
+    color: white;
+    /* background-image: url(./svg/Rectangle\ 34.svg); */
+    background-repeat: no-repeat;
+    
 }
 
-.nav{
-    height: 100px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.nav__link{
-    color: #e5e5e5;
-    padding-right: 100px;
-    font-size: 18px;
-    font-weight: 600;
-    text-decoration: none;
-}
-
-.nav__link--color{
-    color: #f1a600;
-}
 
 /* --------------------
 ---------NAV------------
 -------------------- */
+nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1.5rem 1.5rem;
+}
+
+nav>div img{
+    width: 24px;
+}
+
+input#menu-hamburguesa{
+    visibility: hidden;
+}
+
+input#menu-hamburguesa~ul{
+    background-color: var(--main-color);
+    width: 100%;
+    list-style: none;
+    height: 100%;
+    position: absolute;
+    right: 100%;
+    transition: all 500ms ease-in-out;
+}
+
+input#menu-hamburguesa:checked ~ul{
+    right: 0;
+
+}
+
+
+/* --------------------
+---------HOME------------
+-------------------- */
+#home-section{
+    margin-bottom: 5rem;
+}
+
+#home-section>img{
+    width: max-content;
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    top: 0;
+}
+
+
+.home--container{
+    display: flex;
+    flex-direction: column;
+    height: 15rem;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+
+
+.h1{
+    font-size: 50px;
+    font-weight: 600;
+}
+
+#home-section h1+p{
+    font-size: 18px;
+    font-weight: 400;
+}
+.p--span__color{
+    color: var(--first-color);
+}
+
+
+/* --------------------
+-----ACERCA DE MI------
+-------------------- */
+
+#acerca-de-mi-section{
+    background-color: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 2rem;
+}
+
+.acerca--h2{
+    font-size: 2rem;
+    padding: 1.5rem;
+
+}
+
+#acerca-de-mi-section>p{
+    margin-bottom: 2rem;
+    font-size: 1rem;
+}
+
+.card--container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.card>img{
+    width: 5rem;
+}
+
+.card--p__bold{
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+footer{
+    text-align: center;
+    height: 5rem;
+    align-items: center;
+}
+
+footer>p{
+    padding: 2rem;
+}
+
+@media only screen and (min-width: 375px){
+
+}
 

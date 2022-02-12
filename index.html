@@ -4,23 +4,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./estilos.css">
     <title>Luis Sánchez</title>
 </head>
 <body>
-    <nav class="nav">
-        <a href="#" class="nav__link nav__link--color" >Home</a>
-        <a href="#" class="nav__link">Acerca de mi</a>
-        <a href="#" class="nav__link">Experiencia</a>
-        <a href="#" class="nav__link">Mis habilidades</a>
-        <a href="#" class="nav__link">Mi portafolio</a>
-        <a href="#" class="nav__link">Contacto</a>
+    <nav>
+        <div>
+            <input type="checkbox" id="menu-hamburguesa">
+            <label for="menu-hamburguesa">
+                <img src="./icons/menu 1.svg" alt="">
+            </label>
+            <ul>
+                <li>Home</li>
+                <li>Acerca de mi</li>
+                <li>Experiencia</li>
+                <li>Mis habilidades</li>
+                <li>Mi portafolio</li>
+                <li>Contacto</li>
+            </ul>
+        </div>
     </nav>
+    <section id="home-section">
+        <img class="home--background" src="./svg/Rectangle 34.svg" alt="">
+        <div class="home--container">
+            <h1 class="h1">Nando S.</h1>
+            <p class="home--pLorem">Lorem ipsum dolor sit <br>amet consectetur <br>adipisicing elit.</p>
+            <p class="home--pExp"><span class="p--span__color">+5 años</span> de <br>experiencia</p>
+            <div class="social-icon-wrapper">
+                <img class="icon" src="./icons/ant-design_instagram-filled.svg" alt="">
+                <img class="icon" src="./icons/ant-design_twitter-outlined.svg" alt="">
+                <img class="icon" src="./icons/cib_linkedin-in.svg" alt="">
+            </div>
+        </div>
+        <img src="" alt="">
+    </section>
+    <section id="acerca-de-mi-section">
+        <h2 class="acerca--h2">Acerca de mí</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum, distinctio corporis! Ullam voluptatum fugit consequuntur eum placeat tenetur ratione quo rem aliquam error, recusandae quaerat incidunt non ad consectetur quia?</p>
+        <div class="card--container">
+            <div class="card">
+                <img src="./img/Logos-Imágenes/image 9.jpg" alt="">
+                <p class="card--p__bold">UVM</p>
+                <p>2010-2014</p>
+            </div>
+            <div class="card">
+                <img src="./img/Logos-Imágenes/logo_academlopng.png" alt="">
+                <p class="card--p__bold">Acamdemlo</p>
+                <p>2022-2022</p>
+            </div>
+        </div>
+    </section>
+    <section id="experiencia-section">
+        <h2>Experiencia</h2>
+        <!-- Maquetar esta seccion con ayuda de css grid -->
+    </section>
+
     <footer>
-        
+        <p>Hecho con &#128155 en Academlo</p>
     </footer>
 </body>
 </html>
