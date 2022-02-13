@@ -42,9 +42,10 @@ input#menu-hamburguesa{
 
 input#menu-hamburguesa~ul{
     background-color: var(--main-color);
+    opacity: 0.95;
     width: 100%;
     list-style: none;
-    height: 100%;
+    height: 40%;
     position: absolute;
     right: 100%;
     transition: all 500ms ease-in-out;
@@ -62,6 +63,19 @@ ul>li{
     font-weight: 700;
 }
 
+ul>li>a{
+    text-decoration: none;
+    color: var(--p-color);
+
+}
+
+ul>li>a:hover{
+    color: var(--first-color);
+}
+
+.active{
+    color: var(--first-color);
+}
 /* --------------------
 ---------HOME------------
 -------------------- */
@@ -69,7 +83,7 @@ ul>li{
     margin-bottom: 5rem;
 }
 
-#home-section>img{
+.home--background{
     width: max-content;
     position: absolute;
     z-index: -1;
@@ -77,6 +91,13 @@ ul>li{
     top: 0;
 }
 
+.main--photo{
+    width: 200px;
+    position: absolute;
+    right: 20px;
+    top: 130px;
+    z-index: -1;
+}
 
 .home--container{
     display: flex;
@@ -323,6 +344,10 @@ footer>p{
 }
 
 @media only screen and (min-width: 375px){
+
+}
+
+@media only screen and (min-width: 755px){
 
 }
 
