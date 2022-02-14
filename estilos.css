@@ -45,7 +45,7 @@ input#menu-hamburguesa~ul{
     opacity: 0.95;
     width: 100%;
     list-style: none;
-    height: 40%;
+    height: 350px;
     position: absolute;
     right: 100%;
     transition: all 500ms ease-in-out;
@@ -348,6 +348,18 @@ footer>p{
 }
 
 @media only screen and (min-width: 755px){
-
+    label{
+        display: none;
+    }
+    input#menu-hamburguesa ~ul{
+        position: static;
+        background-color: transparent;
+        display: flex;
+        transition: none;
+    }
+    ul>li{
+        margin-left: 3rem;
+        font-size: 1rem;
+    }
 }
 
