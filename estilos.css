@@ -247,7 +247,7 @@ ul>li>a:hover{
     margin: auto;
     margin-bottom: 3rem;
     grid-template-columns: 1fr;
-    grid-template-rows: 5rem repeat(3,15rem);
+    /* grid-template-rows: 5rem repeat(3,15rem); */
     justify-items: start;
     text-align: start;
     gap: 3rem;
@@ -255,15 +255,14 @@ ul>li>a:hover{
     font-weight: 700;
 }
 
-.portafolio--container{
+/* .portafolio--container{
 
-}
+} */
 
 .portafolio--container>img{
     width: 15rem;
     background-color: var(--first-color);
     padding: 0.75rem 0.5rem 0 0.5rem;
-
     top: 10px;
     
 }
@@ -330,6 +329,7 @@ ul>li>a:hover{
     color: var(--p-color);
 }
 
+
 /* --------------------
 --------FOOTER---------
 -------------------- */
@@ -342,6 +342,13 @@ footer{
 footer>p{
     padding: 2rem;
 }
+
+
+/* --------------------
+------MEDIA QUERY------
+-------------------- */
+
+
 
 @media only screen and (min-width: 375px){
 
@@ -356,10 +363,82 @@ footer>p{
         background-color: transparent;
         display: flex;
         transition: none;
+        height: 80px;
+        text-align: center;
+        width: 100vw;
+        justify-content: end;
     }
     ul>li{
-        margin-left: 3rem;
-        font-size: 1rem;
+        margin-left: 5vw;
+        font-size: 0.85rem;
+    }
+
+    #home-section{
+        /* height: 40vw; */
+    }
+
+    .main--photo{
+        width: 40vw;
+    }
+    /* nav{
+        width: 80%;
+    } */
+
+
+
+
+    #exp--section{
+        width: 70vw;
+    }
+
+    #portafolio--section{
+        width: 60%;
+    }
+
+    .portafolio--container>img{
+        width: 40vw;
+    }
+
+
+}
+
+
+@media only screen and (min-width: 1023px){
+
+    
+
+    #home-section{
+        width: 900px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 4rem;
+    }
+    .main--photo{
+        width: 500px;
+        height: fit-content;
+        position: static;
+    }
+    #acerca-de-mi-section{
+        width: 900px;
+        margin: auto;
+    }
+
+    #exp--section{
+        width: 900px;
+    }
+    .habilidades--background{
+        right: 60vw;
+    }
+    #habilidades--section{
+        width: 900px;
+    }
+    #portafolio--section{
+        width: 900px;
+        /* height:1300px; */
+    }
+    .portafolio--container>img{
+        width: 500px;
     }
 }
 
