@@ -350,31 +350,45 @@ footer>p{
 
 
 
-@media only screen and (min-width: 375px){
 
-}
+/* --------------------
+---------TABLET--------
+-------------------- */
+
+
 
 @media only screen and (min-width: 755px){
     label{
         display: none;
     }
+
+
     input#menu-hamburguesa ~ul{
         position: static;
         background-color: transparent;
         display: flex;
-        transition: none;
+        /* transition: none; */
         height: 80px;
         text-align: center;
-        width: 100vw;
+        /* width: 100vw; */
         justify-content: end;
     }
     ul>li{
         margin-left: 5vw;
         font-size: 0.85rem;
+        font-weight: 400;
     }
 
     #home-section{
         /* height: 40vw; */
+    }
+
+    .h1{
+        font-size: 75px;
+    }
+
+    .home--background{
+        width: 50vw;
     }
 
     .main--photo{
@@ -403,24 +417,50 @@ footer>p{
 }
 
 
+
+/* --------------------
+-----DESKTOP(1024)-----
+-------------------- */
+
+
+
 @media only screen and (min-width: 1023px){
 
     
 
     #home-section{
-        width: 900px;
+        /* width: 900px; */
         margin: auto;
         display: flex;
         justify-content: space-between;
         margin-bottom: 4rem;
+        height: 800px;
+        padding:0 10vw;
+
+    }
+    .home--background{
+        /* content: url(./svg/Rectangle\ 33.svg); */
+        width: 65vw;
+    }
+
+    .home--container{
+        height: auto;
+        padding: 0 2rem;
+    }
+
+    .h1{
+        font-size: 150px;
     }
     .main--photo{
-        width: 500px;
-        height: fit-content;
-        position: static;
+        width: 50vw;
+        height: auto;
+        /* position: static; */
+        right: 10vw;
+        top: 25vw;
     }
     #acerca-de-mi-section{
-        width: 900px;
+        /* width: 900px; */
+        padding: 0 20vw;
         margin: auto;
     }
 
@@ -442,3 +482,6 @@ footer>p{
     }
 }
 
+/* --------------------
+-----DESKTOP(1440)-----
+-------------------- */
