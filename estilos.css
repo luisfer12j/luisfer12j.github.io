@@ -114,7 +114,7 @@ ul>li>a:hover{
     font-weight: 600;
 }
 
-#home-section h1+p{
+#home-section>p{
     font-size: 18px;
     font-weight: 400;
 }
@@ -361,7 +361,9 @@ footer>p{
     label{
         display: none;
     }
-
+    nav{
+        padding: 0 1.5rem;
+    }
 
     input#menu-hamburguesa ~ul{
         position: static;
@@ -380,40 +382,49 @@ footer>p{
     }
 
     #home-section{
-        /* height: 40vw; */
+        padding: 0 4vw;
+        height: 450px;
+
+    }
+
+    .home--container{
+        justify-content: space-between;
+        height: inherit;
+    }
+
+    .home--container>p{
+        font-size: 40px;
+        height: auto;
+    }
+    .home--pLorem{
+        font-size: 40px;
     }
 
     .h1{
-        font-size: 75px;
+        font-size: 85px;
     }
 
     .home--background{
-        width: 50vw;
+        width: 60vw;
     }
 
     .main--photo{
-        width: 40vw;
+        width: 45vw;
+        top: 200px;
+        right: calc(4vw + 2rem);
     }
-    /* nav{
-        width: 80%;
-    } */
-
-
-
 
     #exp--section{
         width: 70vw;
     }
 
     #portafolio--section{
-        width: 60%;
+        width: 80%;
     }
 
     .portafolio--container>img{
         width: 40vw;
     }
-
-
 }
 
 
