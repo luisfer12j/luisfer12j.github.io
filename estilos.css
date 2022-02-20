@@ -437,16 +437,20 @@ footer>p{
 
 @media only screen and (min-width: 1023px){
 
-    
+
+    ul>li{
+        font-size: 18px;
+    }
 
     #home-section{
         /* width: 900px; */
         margin: auto;
         display: flex;
-        justify-content: space-between;
+        align-items: start;
         margin-bottom: 4rem;
-        height: 800px;
+        height: calc(50vw + 260px);
         padding:0 10vw;
+        font-size: 50px;
 
     }
     .home--background{
@@ -461,38 +465,104 @@ footer>p{
 
     .h1{
         font-size: 150px;
+        padding-bottom: 5vw;
     }
+
+    .home--container>p{
+        padding-bottom: 5vw;
+    }
+
     .main--photo{
         width: 50vw;
         height: auto;
         /* position: static; */
         right: 10vw;
-        top: 25vw;
+        top: 260px;
     }
     #acerca-de-mi-section{
         /* width: 900px; */
         padding: 0 20vw;
         margin: auto;
+        font-size: 18px;
+    }
+
+    #acerca-de-mi-section>h2{
+        font-size: 50px;
+    }
+
+    .card>img{
+        width: 150px;
     }
 
     #exp--section{
-        width: 900px;
+        width: 80%;
+        font-size: 50px;
+        margin-bottom: 150px;
     }
+
+    #exp--section>h2{
+        font-size: 50px;
+    }
+
+    .exp--container{
+        font-size: 18px;
+    }
+    
+    .exp--h3{
+        font-size: 45px;
+        
+    }
+
+    .logo{
+        width: 100px;
+    }
+
     .habilidades--background{
-        right: 60vw;
+        right: 0;
+        left: 0;
+        content: url(./svg/Rectangle\ 33.svg);
+        width: 40%;
+        max-width: 700px;
     }
     #habilidades--section{
         width: 900px;
+        font-size: 45px;
+        margin-top: 240px;
     }
+
+    #habilidades--section>h2{
+        font-size: 50px;
+    }
+
+    .habilidades--p__color{
+        font-size: 70px;
+    }
+
+    .habilidades--p__align{
+        font-size: 30px;
+    }
+
     #portafolio--section{
-        width: 900px;
+        width: 100%;
         /* height:1300px; */
+        font-size: 50px;
+        background-color: var(--second-color);
+        padding: 4rem 15vw;
     }
+
+    #portafolio--section>h2{
+        font-size: 50px;
+    }
+
     .portafolio--container>img{
         width: 500px;
     }
-}
 
-/* --------------------
------DESKTOP(1440)-----
--------------------- */
+    #contacto--section{
+        padding: 4vw 15vw;
+    }
+    
+    #contacto--section>h2{
+        font-size: 50px;
+    }
+}
